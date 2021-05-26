@@ -7,7 +7,7 @@ public class Sistem {
     Sistem() {
     }
 
-    public void menu() {
+    public void menu()  {
         List<Sectiune> sectiuni = new ArrayList<>();
         List<Autor> autori = new ArrayList<>();
         List<Carte> carti = new ArrayList<>();
@@ -21,6 +21,7 @@ public class Sistem {
         String firstName;
         String lastName;
         int choice;
+
         int id;
 
         Scanner scanner = new Scanner(System.in);
@@ -43,6 +44,9 @@ public class Sistem {
             try {
                 switch (choice) {
                     case 1:
+                        AuditService auditService = new AuditService();
+                        auditService.WriteActionsToCSVFile("addBook");
+
                         System.out.println("     ----- Add a new book -----");
                         System.out.println("Enter the name of the book");
                         bookName = scanner.next();
@@ -58,6 +62,7 @@ public class Sistem {
                         _author.setCitatMemorabil("A fi sau a nu fi");
                         _author.addBook(_book);
                         _author.setGenLiterar(GenuriLiterare[random.nextInt(4)]);
+
                         autori.add(_author);
                         carti.add(_book);
                         System.out.println("Select the category of the book: ");
@@ -88,6 +93,8 @@ public class Sistem {
                         break;
 
                     case 2:
+                        AuditService auditService1 = new AuditService();
+                        auditService1.WriteActionsToCSVFile("selectTheSection");
                         System.out.println("     ----- Select the section you want to see -----");
 
                         System.out.println("1) Epic");
@@ -114,6 +121,8 @@ public class Sistem {
                         break;
 
                     case 3:
+                        AuditService auditService2 = new AuditService();
+                        auditService2.WriteActionsToCSVFile("writeTheNameAuthor");
                         System.out.println("     -----Write the name of the author-----");
                         System.out.println("Enter the Author's Name:");
                         String first = scanner.next();
@@ -124,6 +133,8 @@ public class Sistem {
                         break;
 
                     case 4:
+                        AuditService auditService3 = new AuditService();
+                        auditService3.WriteActionsToCSVFile("displayTheAuthors");
                         System.out.println("The authors with books in this library are:\n ");
                         for (Autor a : autori)
                         {

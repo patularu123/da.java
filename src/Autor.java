@@ -1,6 +1,7 @@
 import java.util.*;
 public class Autor extends Persoana {
     private String CitatMemorabil;
+    private String Idee;
     private String GenLiterar;
     public ArrayList<Carte> books;
     protected String firstName;

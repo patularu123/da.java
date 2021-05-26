@@ -3,7 +3,9 @@ public class Carte implements Comparable{
     protected String bookName;
     protected String authorFirstName;
     protected String authorLastName;
+    protected String authorSecondName;
     protected Date publishDate;
+    protected int nrpag;
     public ArrayList<Carte> books;
     public ArrayList<Autor> autori;
 

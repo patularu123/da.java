@@ -3,6 +3,7 @@ import java.util.*;
 
 public class Biblioteca {
     private int NrCarti;
+    private int NrScaune;
     private String name;
     private Integer id;
     public Set<Autor> autors;

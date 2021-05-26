@@ -2,6 +2,7 @@ import java.util.Date;
 public class Condica {
     private Date date;
     private String meserie;
+    private String ora;
     private boolean motivated;
 
     public Condica() {

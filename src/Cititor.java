@@ -1,5 +1,6 @@
 public class Cititor extends Persoana{
     private String GenLiterar;
+    private String Erata;
     public Cititor(String NumePersoana,String Prenume,String GenLiterar)
     {
         super(NumePersoana,Prenume);

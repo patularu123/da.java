@@ -1,5 +1,6 @@
 public class ManagerBiblioteca {
     private static String name;
+    private static int varsta;
     private static ManagerBiblioteca manager=new ManagerBiblioteca();
     private ManagerBiblioteca()
     {

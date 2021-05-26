@@ -2,6 +2,7 @@ public class Persoana {
     private final String Firstname;
     private final String Secondname;
     protected int Salariu;
+    protected int varsta;
     public Persoana(String _Firstname,String _Secondname)
     {
         this.Firstname=_Firstname;
